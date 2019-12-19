@@ -9,18 +9,15 @@ class Hero:
 
     # Fungsi untuk menyerang
     def serang(self, lawan, nilaiSerang):
-        print(self.name, "Menyerang", lawan.name)
+        print(self.name, "Menyerang", lawan.name, "dengan kekuatan", nilaiSerang)
         # Jika fungsi serang diapnggil, otomatis fungsi diserang() juga terpanggil
         lawan.diserang(self, self.power)
 
     # Fungsi untuk diserang
     def diserang(self, lawan, sisaNyawa):
-        print(self.name, "Diserang", lawan.name)
         # Mengurangi nilai health dengan nilai serangan lawan
         effectSerang = self.health - sisaNyawa
-        print("Nyawa terisa : ", effectSerang)
-
-        
+        print(self.name, "Diserang", lawan.name, ", Nyawa tersisa", effectSerang)
 
 
 luffy = Hero("Luffy", 100, 40, 30)
