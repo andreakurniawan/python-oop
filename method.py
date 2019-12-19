@@ -27,13 +27,18 @@ class Character:
         print(name)
 
 
-    # 3. Method dengan argument dan return
-    def UpgradeDefense(self, valUp):
+    def upDefense(self, valUp):
         self.valDefense += valUp
+    
+
+    # 3. Method dengan argument dan return
+    def getDefence(self):
+        return self.valDefense
 
 
 character1 = Character("Arlong", "Fire", "FireBall", 80, 60)
 
 character1.infoCharacter()
 character1.inputOwner("Andrea")
-character1.UpgradeDefense(10)
+character1.upDefense(40)
+print(character1.getDefence())
