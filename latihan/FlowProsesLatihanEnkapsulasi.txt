@@ -1,0 +1,23 @@
+=== RULES ===
+1. class Hero
+ - System level dan experience
+ - Setiap intansisai variabel dalam object berubah sesuai perubahan level
+ - Experience Naik --> Level bertambah
+
+2. Hanya instansiasi variabel dan level yang bisa di lihat user.
+3. Buat method tambahExperience() setiap melakukan method serang()
+4. Experience naik, level Hero naik
+5. Level Hero naik, instansiasi variabel berubah.
+
+
+
+
+== STEP PROGRAM ===
+1. Buat Constract init
+2. Buat Class variabel, jumlah Hero
+3. buat instansiasi variabel :
+ - Untuk Menampung nilai awal
+ - Untuk menampung nilai setiap kali level naik
+ - Untuk Menampung nilai yang sedang berjalan
+4. Buat property info() untuk menampilkan nilai dari instansiasi variabel (name, health, attPower dan armor)
+5. Buat setter untuk merubah nilai dari instansiasi variabel setiap kali level naik
