@@ -1,6 +1,6 @@
 ''' Prinsip Enkapsulasi '''
-''' 1. Buat semua variabel bersifat variabel '''
-''' 2. Gunakan metode getter dan setter untuk mengambil nilai dari variabel '''
+''' 1. Buat semua variabel bersifat variabel private '''
+''' 2. Gunakan metode getter dan setter untuk mengambil nilai dari variabel private '''
 
 
 class Hero:
@@ -13,20 +13,19 @@ class Hero:
 
     # Getter
     ''' Digunakan untuk mengambil nilai dari variabel private '''
+
     def getName(self):
         return self.__name
-
 
     def getHealth(self):
         return self.__health
 
-
     def serang(self, attackValue):
         self.__health -= attackValue
 
-
     # Setter
     ''' Digunakan untuk merubah nilai dari variabel private, dalam arti lain yakni merubah variabel private menjadi public secara tidak langsung. '''
+
     def setAttPower(self, valAttack):
         self.__attPower = valAttack
         return self.__attPower
