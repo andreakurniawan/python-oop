@@ -6,10 +6,10 @@ slandar = HeroStrength("Slandar")
 
 lina.show_info()
 slandar.show_info()
+lina.gainExp = 100
+slandar.gainExp = 150
 
-# Naik Level
-lina.gainExp = 200
-slandar.gainExp = 250
+print("=========Level Naik=========")
 
 lina.show_info()
 slandar.show_info()
